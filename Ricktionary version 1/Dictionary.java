@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 
 public class Dictionary {
-    private ArrayList<Word> wordList = new ArrayList<Word>();
+    private ArrayList<Word> wordList;
+    
+    public Dictionary(){
+        this.wordList = new ArrayList<Word>();
+    }
 
     public void insertWord(String newWord, String newWordExplanation) {
         Word word = new Word(newWord, newWordExplanation, wordList.size() + 1);
