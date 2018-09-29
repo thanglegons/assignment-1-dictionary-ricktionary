@@ -2,9 +2,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DictionaryManagement {
-    private Dictionary dictionary = new Dictionary();
+    private Dictionary dictionary;
     private Scanner scanner;
 
+    public DictionaryManagement(){
+        dictionary = new Dictionary();
+    }
+    
     public void insertFromCommandLine() {
         int numberOfWord = 0;
         numberOfWord = scanner.nextInt();
